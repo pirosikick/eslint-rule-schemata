@@ -1,0 +1,26 @@
+{
+  "name": "eslint-rule-schemata",
+  "version": "0.0.1",
+  "description": "JSON Schema for ESLint rules",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pirosikick/eslint-rule-schemata.git"
+  },
+  "keywords": [
+    "ESLint"
+  ],
+  "author": "Hiroyuki ANAI <pirosikick@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pirosikick/eslint-rule-schemata/issues"
+  },
+  "homepage": "https://github.com/pirosikick/eslint-rule-schemata#readme",
+  "devDependencies": {
+    "eslint": "3.9.0",
+    "lodash.reduce": "^4.6.0"
+  }
+}
