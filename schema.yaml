@@ -1,0 +1,146 @@
+type: object
+definitions:
+  root:
+    type: bool
+  extends:
+    anyOf:
+    - type: string
+    - type: array
+      items:
+        type: string
+  ecmaVersion:
+    type: number
+    enum: [5, 6, 7, 2015, 2016, 2017]
+    default: 5
+  sourceType:
+    type: string
+    enum: [script, module]
+    default: script
+  ecmaFeatures:
+    type: object
+    properties:
+      globalReturn:
+        type: bool
+      impliedStrict:
+        type: bool
+      jsx:
+        type: bool
+      experimentalObjectRestSpread:
+        type: bool
+    additionalProperties: false
+  parserOptions:
+    type: object
+    properties:
+      ecmaVersion:
+        $ref: '#/definitions/ecmaVersion'
+      sourceType:
+        $ref: '#/definitions/sourceType'
+      ecmaFeatures:
+        $ref: '#/definitions/ecmaFeatures'
+    additionalProperties: false
+  parser:
+    type: string
+  env:
+    type: object
+    properties:
+      browser:
+        description: browser global variables.
+        type: bool
+      node:
+        description: Node.js global variables and Node.js scoping.
+        type: bool
+      commonjs:
+        description: CommonJS global variables and CommonJS scoping (use this for browser-only code that uses Browserify/WebPack).
+        type: bool
+      shared-node-browser:
+        description: Globals common to both Node and Browser.
+        type: bool
+      es6:
+        description: enable all ECMAScript 6 features except for modules (this automatically sets the ecmaVersion parser option to 6).
+        type: bool
+      worker:
+        description: web workers global variables.
+        type: bool
+      amd:
+        description: defines require() and define() as global variables as per the amd spec.
+        type: bool
+      mocha:
+        description: adds all of the Mocha testing global variables.
+        type: bool
+      jasmine:
+        description: adds all of the Jasmine testing global variables for version 1.3 and 2.0.
+        type: bool
+      jest:
+        description: Jest global variables.
+        type: bool
+      phantomjs:
+        description: PhantomJS global variables.
+        type: bool
+      protractor:
+        description: Protractor global variables.
+        type: bool
+      qunit:
+        description: QUnit global variables.
+        type: bool
+      jquery:
+        description: jQuery global variables.
+        type: bool
+      prototypejs:
+        description: Prototype.js global variables.
+        type: bool
+      shelljs:
+        description: ShellJS global variables.
+        type: bool
+      meteor:
+        description: Meteor global variables.
+        type: bool
+      mongo:
+        description: MongoDB global variables.
+        type: bool
+      applescript:
+        description: AppleScript global variables.
+        type: bool
+      nashorn:
+        description: Java 8 Nashorn global variables.
+        type: bool
+      serviceworker:
+        description: Service Worker global variables.
+        type: bool
+      atomtest:
+        description: Atom test helper globals.
+        type: bool
+      embertest:
+        description: Ember test helper globals.
+        type: bool
+      webextensions:
+        description: WebExtensions globals.
+        type: bool
+      greasemonkey:
+        description: GreaseMonkey globals.
+        type: bool
+    additionalProperties: false
+    rules:
+      type: object
+  plugins:
+    type: array
+    items:
+      type: string
+  globals:
+    type: object
+    patternProperties:
+      "\w+":
+        type: bool
+    additionalProperties: true
+properties:
+  root:
+    $ref: '#/definitions/root'
+  extends:
+    $ref: '#/definitions/extends'
+  parserOptions:
+    $ref: '#/definitions/parserOptions'
+  parser:
+    $ref: '#/definitions/parser'
+  env:
+    $ref: '#/definitions/env'
+  rules:
+    $ref: '#/definitions/rules'
