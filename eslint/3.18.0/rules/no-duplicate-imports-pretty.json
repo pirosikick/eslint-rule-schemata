@@ -1,0 +1,11 @@
+[
+  {
+    "type": "object",
+    "properties": {
+      "includeExports": {
+        "type": "boolean"
+      }
+    },
+    "additionalProperties": false
+  }
+]

@@ -1,0 +1,17 @@
+[
+  {
+    "enum": [
+      "declaration",
+      "expression"
+    ]
+  },
+  {
+    "type": "object",
+    "properties": {
+      "allowArrowFunctions": {
+        "type": "boolean"
+      }
+    },
+    "additionalProperties": false
+  }
+]

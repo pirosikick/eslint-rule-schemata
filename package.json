@@ -20,7 +20,8 @@
   },
   "homepage": "https://github.com/pirosikick/eslint-rule-schemata#readme",
   "devDependencies": {
-    "eslint": "3.9.0",
+    "eslint": "3.18.0 ",
+    "lodash.foreach": "^4.5.0",
     "lodash.reduce": "^4.6.0",
     "yamljs": "^0.2.8"
   }

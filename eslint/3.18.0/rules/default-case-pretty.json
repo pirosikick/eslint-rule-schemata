@@ -1,0 +1,11 @@
+[
+  {
+    "type": "object",
+    "properties": {
+      "commentPattern": {
+        "type": "string"
+      }
+    },
+    "additionalProperties": false
+  }
+]

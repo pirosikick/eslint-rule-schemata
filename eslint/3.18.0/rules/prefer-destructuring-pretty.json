@@ -1,0 +1,23 @@
+[
+  {
+    "type": "object",
+    "properties": {
+      "array": {
+        "type": "boolean"
+      },
+      "object": {
+        "type": "boolean"
+      }
+    },
+    "additionalProperties": false
+  },
+  {
+    "type": "object",
+    "properties": {
+      "enforceForRenamedProperties": {
+        "type": "boolean"
+      }
+    },
+    "additionalProperties": false
+  }
+]

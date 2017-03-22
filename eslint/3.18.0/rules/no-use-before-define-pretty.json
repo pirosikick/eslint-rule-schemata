@@ -1,0 +1,26 @@
+[
+  {
+    "oneOf": [
+      {
+        "enum": [
+          "nofunc"
+        ]
+      },
+      {
+        "type": "object",
+        "properties": {
+          "functions": {
+            "type": "boolean"
+          },
+          "classes": {
+            "type": "boolean"
+          },
+          "variables": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      }
+    ]
+  }
+]

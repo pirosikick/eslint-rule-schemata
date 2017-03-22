@@ -1,0 +1,37 @@
+[
+  {
+    "oneOf": [
+      {
+        "enum": [
+          "always",
+          "never"
+        ]
+      },
+      {
+        "type": "object",
+        "properties": {
+          "blocks": {
+            "enum": [
+              "always",
+              "never"
+            ]
+          },
+          "switches": {
+            "enum": [
+              "always",
+              "never"
+            ]
+          },
+          "classes": {
+            "enum": [
+              "always",
+              "never"
+            ]
+          }
+        },
+        "additionalProperties": false,
+        "minProperties": 1
+      }
+    ]
+  }
+]

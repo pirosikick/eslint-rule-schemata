@@ -1,3 +1,4 @@
+$schema: http://json-schema.org/draft-04/schema#
 type: object
 definitions:
   root:
@@ -9,23 +10,32 @@ definitions:
       items:
         type: string
   ecmaVersion:
+    description: set to 3, 5 (default), 6, 7, or 8 to specify the version of ECMAScript syntax you want to use. You can also set to 2015 (same as 6), 2016 (same as 7), or 2017 (same as 8) to use the year-based naming.
     type: number
-    enum: [5, 6, 7, 2015, 2016, 2017]
+    enum: [3, 5, 6, 7, 8, 2015, 2016, 2017]
     default: 5
   sourceType:
+    description: set to "script" (default) or "module" if your code is in ECMAScript modules.
     type: string
-    enum: [script, module]
+    enum:
+    - script
+    - module
     default: script
   ecmaFeatures:
+    description: an object indicating which additional language features you’d like to use
     type: object
     properties:
       globalReturn:
+        description: allow return statements in the global scope
         type: bool
       impliedStrict:
+        description: enable global strict mode (if ecmaVersion is 5 or greater)
         type: bool
       jsx:
+        description: enable JSX
         type: bool
       experimentalObjectRestSpread:
+        description: enable support for the experimental object rest/spread properties (IMPORTANT: This is an experimental feature that may change significantly in the future. It’s recommended that you do not write rules relying on this functionality unless you are willing to incur maintenance cost when it changes.)
         type: bool
     additionalProperties: false
   parserOptions:
@@ -131,6 +141,14 @@ definitions:
       "\w+":
         type: bool
     additionalProperties: true
+  ruleFlag:
+    enum:
+    - 0
+    - 1
+    - 2
+    - off
+    - warn
+    - error
 properties:
   root:
     $ref: '#/definitions/root'
@@ -142,5 +160,7 @@ properties:
     $ref: '#/definitions/parser'
   env:
     $ref: '#/definitions/env'
-  rules:
-    $ref: '#/definitions/rules'
+  plugins:
+    $ref: '#/definitions/plugins'
+  globals:
+    $ref: '#/definitions/globals'

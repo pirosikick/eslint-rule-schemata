@@ -1,0 +1,26 @@
+[
+  {
+    "oneOf": [
+      {
+        "enum": [
+          "before",
+          "after",
+          "both",
+          "neither"
+        ]
+      },
+      {
+        "type": "object",
+        "properties": {
+          "before": {
+            "type": "boolean"
+          },
+          "after": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      }
+    ]
+  }
+]

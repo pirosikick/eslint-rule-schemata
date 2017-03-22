@@ -1,0 +1,24 @@
+[
+  {
+    "type": "object",
+    "properties": {
+      "allow": {
+        "type": "array",
+        "items": {
+          "enum": [
+            "functions",
+            "arrowFunctions",
+            "generatorFunctions",
+            "methods",
+            "generatorMethods",
+            "getters",
+            "setters",
+            "constructors"
+          ]
+        },
+        "uniqueItems": true
+      }
+    },
+    "additionalProperties": false
+  }
+]

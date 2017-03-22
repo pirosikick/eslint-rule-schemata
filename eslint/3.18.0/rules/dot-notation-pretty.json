@@ -1,0 +1,14 @@
+[
+  {
+    "type": "object",
+    "properties": {
+      "allowKeywords": {
+        "type": "boolean"
+      },
+      "allowPattern": {
+        "type": "string"
+      }
+    },
+    "additionalProperties": false
+  }
+]

@@ -1,0 +1,20 @@
+[
+  {
+    "enum": [
+      "asc",
+      "desc"
+    ]
+  },
+  {
+    "type": "object",
+    "properties": {
+      "caseSensitive": {
+        "type": "boolean"
+      },
+      "natural": {
+        "type": "boolean"
+      }
+    },
+    "additionalProperties": false
+  }
+]

@@ -1,0 +1,24 @@
+[
+  {
+    "type": "object",
+    "properties": {
+      "detectObjects": {
+        "type": "boolean"
+      },
+      "enforceConst": {
+        "type": "boolean"
+      },
+      "ignore": {
+        "type": "array",
+        "items": {
+          "type": "number"
+        },
+        "uniqueItems": true
+      },
+      "ignoreArrayIndexes": {
+        "type": "boolean"
+      }
+    },
+    "additionalProperties": false
+  }
+]

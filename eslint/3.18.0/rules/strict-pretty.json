@@ -1,0 +1,10 @@
+[
+  {
+    "enum": [
+      "never",
+      "global",
+      "function",
+      "safe"
+    ]
+  }
+]

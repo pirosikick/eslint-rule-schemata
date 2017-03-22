@@ -1,0 +1,1 @@
+[{"type":"object","properties":{"exceptions":{"type":"array","items":{"enum":["apply","call","delete","defineProperty","getOwnPropertyDescriptor","getPrototypeOf","setPrototypeOf","isExtensible","getOwnPropertyNames","preventExtensions"]},"uniqueItems":true}},"additionalProperties":false}]

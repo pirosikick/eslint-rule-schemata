@@ -1,0 +1,1 @@
+[{"oneOf":[{"enum":["always","never"]},{"type":"object","properties":{"var":{"enum":["always","never"]},"let":{"enum":["always","never"]},"const":{"enum":["always","never"]}},"additionalProperties":false},{"type":"object","properties":{"initialized":{"enum":["always","never"]},"uninitialized":{"enum":["always","never"]}},"additionalProperties":false}]}]

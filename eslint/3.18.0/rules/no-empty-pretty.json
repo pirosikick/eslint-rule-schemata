@@ -1,0 +1,11 @@
+[
+  {
+    "type": "object",
+    "properties": {
+      "allowEmptyCatch": {
+        "type": "boolean"
+      }
+    },
+    "additionalProperties": false
+  }
+]

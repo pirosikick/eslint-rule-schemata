@@ -1,0 +1,20 @@
+[
+  {
+    "type": "object",
+    "properties": {
+      "skipComments": {
+        "type": "boolean"
+      },
+      "skipStrings": {
+        "type": "boolean"
+      },
+      "skipTemplates": {
+        "type": "boolean"
+      },
+      "skipRegExps": {
+        "type": "boolean"
+      }
+    },
+    "additionalProperties": false
+  }
+]

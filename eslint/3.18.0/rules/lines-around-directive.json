@@ -1,0 +1,1 @@
+[{"oneOf":[{"enum":["always","never"]},{"type":"object","properties":{"before":{"enum":["always","never"]},"after":{"enum":["always","never"]}},"additionalProperties":false,"minProperties":2}]}]

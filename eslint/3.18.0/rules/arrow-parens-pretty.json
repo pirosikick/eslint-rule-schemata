@@ -1,0 +1,17 @@
+[
+  {
+    "enum": [
+      "always",
+      "as-needed"
+    ]
+  },
+  {
+    "type": "object",
+    "properties": {
+      "requireForBlockBody": {
+        "type": "boolean"
+      }
+    },
+    "additionalProperties": false
+  }
+]

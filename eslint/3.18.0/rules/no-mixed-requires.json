@@ -1,0 +1,1 @@
+[{"oneOf":[{"type":"boolean"},{"type":"object","properties":{"grouping":{"type":"boolean"},"allowCall":{"type":"boolean"}},"additionalProperties":false}]}]

@@ -1,0 +1,52 @@
+[
+  {
+    "defs": {
+      "value": {
+        "enum": [
+          "always",
+          "always-multiline",
+          "only-multiline",
+          "never"
+        ]
+      },
+      "valueWithIgnore": {
+        "anyOf": [
+          {
+            "$ref": "#/defs/value"
+          },
+          {
+            "enum": [
+              "ignore"
+            ]
+          }
+        ]
+      }
+    },
+    "anyOf": [
+      {
+        "$ref": "#/defs/value"
+      },
+      {
+        "type": "object",
+        "properties": {
+          "arrays": {
+            "$refs": "#/defs/valueWithIgnore"
+          },
+          "objects": {
+            "$refs": "#/defs/valueWithIgnore"
+          },
+          "imports": {
+            "$refs": "#/defs/valueWithIgnore"
+          },
+          "exports": {
+            "$refs": "#/defs/valueWithIgnore"
+          },
+          "functions": {
+            "$refs": "#/defs/valueWithIgnore"
+          }
+        },
+        "additionalProperties": false
+      }
+    ]
+  }
+]

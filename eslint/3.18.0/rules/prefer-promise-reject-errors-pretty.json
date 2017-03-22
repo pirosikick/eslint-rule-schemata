@@ -1,0 +1,11 @@
+[
+  {
+    "type": "object",
+    "properties": {
+      "allowEmptyReject": {
+        "type": "boolean"
+      }
+    },
+    "additionalProperties": false
+  }
+]

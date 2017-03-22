@@ -1,0 +1,39 @@
+[
+  {
+    "oneOf": [
+      {
+        "enum": [
+          "always",
+          "never"
+        ]
+      },
+      {
+        "type": "object",
+        "properties": {
+          "anonymous": {
+            "enum": [
+              "always",
+              "never",
+              "ignore"
+            ]
+          },
+          "named": {
+            "enum": [
+              "always",
+              "never",
+              "ignore"
+            ]
+          },
+          "asyncArrow": {
+            "enum": [
+              "always",
+              "never",
+              "ignore"
+            ]
+          }
+        },
+        "additionalProperties": false
+      }
+    ]
+  }
+]

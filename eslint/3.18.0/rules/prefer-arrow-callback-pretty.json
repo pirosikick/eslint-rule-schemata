@@ -1,0 +1,14 @@
+[
+  {
+    "type": "object",
+    "properties": {
+      "allowNamedFunctions": {
+        "type": "boolean"
+      },
+      "allowUnboundThis": {
+        "type": "boolean"
+      }
+    },
+    "additionalProperties": false
+  }
+]

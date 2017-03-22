@@ -1,0 +1,9 @@
+[
+  {
+    "enum": [
+      "always",
+      "as-needed",
+      "never"
+    ]
+  }
+]

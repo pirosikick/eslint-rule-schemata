@@ -1,0 +1,40 @@
+{
+  "anyOf": [
+    {
+      "type": "array",
+      "additionalItems": false,
+      "items": [
+        {
+          "enum": [
+            "always",
+            "never"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "includeCommonJSModuleExports": {
+              "type": "boolean"
+            }
+          },
+          "additionalProperties": false
+        }
+      ]
+    },
+    {
+      "type": "array",
+      "additionalItems": false,
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "includeCommonJSModuleExports": {
+              "type": "boolean"
+            }
+          },
+          "additionalProperties": false
+        }
+      ]
+    }
+  ]
+}

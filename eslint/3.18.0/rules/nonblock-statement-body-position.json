@@ -1,0 +1,1 @@
+[{"enum":["beside","below","any"]},{"properties":{"overrides":{"properties":{"if":{"enum":["beside","below","any"]},"else":{"enum":["beside","below","any"]},"while":{"enum":["beside","below","any"]},"do":{"enum":["beside","below","any"]},"for":{"enum":["beside","below","any"]}},"additionalProperties":false}},"additionalProperties":false}]

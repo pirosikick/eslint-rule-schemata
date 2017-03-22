@@ -1,0 +1,32 @@
+[
+  {
+    "type": "object",
+    "properties": {
+      "allow": {
+        "type": "array",
+        "items": {
+          "enum": [
+            "^",
+            "|",
+            "&",
+            "<<",
+            ">>",
+            ">>>",
+            "^=",
+            "|=",
+            "&=",
+            "<<=",
+            ">>=",
+            ">>>=",
+            "~"
+          ]
+        },
+        "uniqueItems": true
+      },
+      "int32Hint": {
+        "type": "boolean"
+      }
+    },
+    "additionalProperties": false
+  }
+]

@@ -1,0 +1,35 @@
+[
+  {
+    "oneOf": [
+      {
+        "type": "object",
+        "properties": {
+          "props": {
+            "enum": [
+              false
+            ]
+          }
+        },
+        "additionalProperties": false
+      },
+      {
+        "type": "object",
+        "properties": {
+          "props": {
+            "enum": [
+              true
+            ]
+          },
+          "ignorePropertyModificationsFor": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "uniqueItems": true
+          }
+        },
+        "additionalProperties": false
+      }
+    ]
+  }
+]

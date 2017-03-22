@@ -1,0 +1,14 @@
+[
+  {
+    "type": "object",
+    "properties": {
+      "getWithoutSet": {
+        "type": "boolean"
+      },
+      "setWithoutGet": {
+        "type": "boolean"
+      }
+    },
+    "additionalProperties": false
+  }
+]

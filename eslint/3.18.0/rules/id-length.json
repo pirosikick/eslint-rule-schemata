@@ -1,0 +1,1 @@
+[{"type":"object","properties":{"min":{"type":"number"},"max":{"type":"number"},"exceptions":{"type":"array","uniqueItems":true,"items":{"type":"string"}},"properties":{"enum":["always","never"]}},"additionalProperties":false}]

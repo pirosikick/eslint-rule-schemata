@@ -1,0 +1,26 @@
+[
+  {
+    "type": "object",
+    "properties": {
+      "require": {
+        "type": "object",
+        "properties": {
+          "ClassDeclaration": {
+            "type": "boolean"
+          },
+          "MethodDefinition": {
+            "type": "boolean"
+          },
+          "FunctionDeclaration": {
+            "type": "boolean"
+          },
+          "ArrowFunctionExpression": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "additionalProperties": false
+  }
+]

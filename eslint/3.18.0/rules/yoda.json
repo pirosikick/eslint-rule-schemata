@@ -1,0 +1,1 @@
+[{"enum":["always","never"]},{"type":"object","properties":{"exceptRange":{"type":"boolean"},"onlyEquality":{"type":"boolean"}},"additionalProperties":false}]

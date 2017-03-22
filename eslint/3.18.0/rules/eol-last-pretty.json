@@ -1,0 +1,10 @@
+[
+  {
+    "enum": [
+      "always",
+      "never",
+      "unix",
+      "windows"
+    ]
+  }
+]

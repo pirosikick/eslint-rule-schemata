@@ -1,0 +1,49 @@
+[
+  {
+    "type": "object",
+    "properties": {
+      "groups": {
+        "type": "array",
+        "items": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "+",
+              "-",
+              "*",
+              "/",
+              "%",
+              "**",
+              "&",
+              "|",
+              "^",
+              "~",
+              "<<",
+              ">>",
+              ">>>",
+              "==",
+              "!=",
+              "===",
+              "!==",
+              ">",
+              ">=",
+              "<",
+              "<=",
+              "&&",
+              "||",
+              "in",
+              "instanceof"
+            ]
+          },
+          "minItems": 2,
+          "uniqueItems": true
+        },
+        "uniqueItems": true
+      },
+      "allowSamePrecedence": {
+        "type": "boolean"
+      }
+    },
+    "additionalProperties": false
+  }
+]

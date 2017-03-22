@@ -1,0 +1,30 @@
+[
+  {
+    "enum": [
+      "single",
+      "double",
+      "backtick"
+    ]
+  },
+  {
+    "anyOf": [
+      {
+        "enum": [
+          "avoid-escape"
+        ]
+      },
+      {
+        "type": "object",
+        "properties": {
+          "avoidEscape": {
+            "type": "boolean"
+          },
+          "allowTemplateLiterals": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      }
+    ]
+  }
+]

@@ -1,0 +1,11 @@
+[
+  {
+    "type": "object",
+    "properties": {
+      "ignoreCase": {
+        "type": "boolean"
+      }
+    },
+    "additionalProperties": false
+  }
+]

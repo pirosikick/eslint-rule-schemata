@@ -1,0 +1,11 @@
+[
+  {
+    "type": "object",
+    "properties": {
+      "allowMultiplePropertiesPerLine": {
+        "type": "boolean"
+      }
+    },
+    "additionalProperties": false
+  }
+]

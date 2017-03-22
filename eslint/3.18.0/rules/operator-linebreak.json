@@ -1,0 +1,1 @@
+[{"enum":["after","before","none",null]},{"type":"object","properties":{"overrides":{"type":"object","properties":{"anyOf":{"type":"string","enum":["after","before","none","ignore"]}}}},"additionalProperties":false}]

@@ -1,0 +1,17 @@
+[
+  {
+    "type": "object",
+    "properties": {
+      "allowShortCircuit": {
+        "type": "boolean"
+      },
+      "allowTernary": {
+        "type": "boolean"
+      },
+      "allowTaggedTemplates": {
+        "type": "boolean"
+      }
+    },
+    "additionalProperties": false
+  }
+]

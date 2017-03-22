@@ -1,0 +1,9 @@
+[
+  {
+    "enum": [
+      "smart-tabs",
+      true,
+      false
+    ]
+  }
+]

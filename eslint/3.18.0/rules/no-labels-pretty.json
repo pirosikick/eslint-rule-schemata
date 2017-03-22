@@ -1,0 +1,14 @@
+[
+  {
+    "type": "object",
+    "properties": {
+      "allowLoop": {
+        "type": "boolean"
+      },
+      "allowSwitch": {
+        "type": "boolean"
+      }
+    },
+    "additionalProperties": false
+  }
+]
